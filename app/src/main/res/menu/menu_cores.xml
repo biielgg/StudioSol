@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_cores_preto"
+        android:title="@string/selecionar_cores"
+        app:showAsAction="always">
+
+        <menu android:id="@+id/menuCores" >
+            <item android:title="@string/amarelo"
+                android:id="@+id/amarelo"/>
+            <item android:id="@+id/azul"
+                android:title="@string/azul" />
+            <item android:title="@string/ciano"
+                android:id="@+id/azul_claro"/>
+            <item android:title="@string/ltgray"
+                android:id="@+id/cinza_claro"/>
+            <item android:title="@string/dkgray"
+                android:id="@+id/cinza_escuro"/>
+            <item android:title="@string/preto"
+                android:id="@+id/preto"/>
+            <item android:title="@string/rosa"
+                android:id="@+id/rosa"/>
+            <item android:title="@string/verde"
+                android:id="@+id/verde"/>
+            <item android:title="@string/vermelho"
+                android:id="@+id/vermelho"/>
+
+        </menu>
+    </item>
+</menu>
