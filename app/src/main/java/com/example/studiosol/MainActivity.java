@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.BufferedReader;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText palpite;
 
     //Segmentos do display, criados como 'botões' para facilitar a implementação
-    private Button a1, a2, a3, b1, b2, b3, c1, c2, c3, d1, d2, d3, e1, e2, e3, f1, f2, f3, g1, g2, g3;
+    private ImageView a1, a2, a3, b1, b2, b3, c1, c2, c3, d1, d2, d3, e1, e2, e3, f1, f2, f3, g1, g2, g3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -301,17 +302,17 @@ public class MainActivity extends AppCompatActivity {
         * - Quando o número é <10, os dois primeiros displays são ocultados
          */
         if (arrayNumeral.length == 3){
-            display3.formatarDisplay(arrayNumeral[0]);
-            display2.formatarDisplay(arrayNumeral[1]);
-            display1.formatarDisplay(arrayNumeral[2]);
-        } else if (arrayNumeral.length == 2){
-            display3.esconderDisplay();
-            display2.formatarDisplay(arrayNumeral[0]);
-            display1.formatarDisplay(arrayNumeral[1]);
-        } else {
-            display3.esconderDisplay();
-            display2.esconderDisplay();
             display1.formatarDisplay(arrayNumeral[0]);
+            display2.formatarDisplay(arrayNumeral[1]);
+            display3.formatarDisplay(arrayNumeral[2]);
+        } else if (arrayNumeral.length == 2){
+            display1.esconderDisplay();
+            display2.formatarDisplay(arrayNumeral[0]);
+            display3.formatarDisplay(arrayNumeral[1]);
+        } else {
+            display1.esconderDisplay();
+            display2.esconderDisplay();
+            display3.formatarDisplay(arrayNumeral[0]);
         }
     }
 

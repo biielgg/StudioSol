@@ -10,280 +10,271 @@
         android:id="@+id/tvResposta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btNovaPartida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
-        android:text="@string/nova_partida"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutDisplays"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:baselineAligned="false"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <EditText
-            android:id="@+id/edPalpite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:digits="0123456789"
-            android:hint="@string/hint"
-            android:inputType="number|textPersonName"
-            android:maxLength="3" />
-
-        <Button
-            android:id="@+id/btEnviar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/enviar"
-            android:textAlignment="center" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/a3"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/a2"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/a1"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/f3"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/b3"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/f2"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/b2"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/f1"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/b1"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/g3"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent"
-            android:textAlignment="viewStart" />
-
-        <Button
-            android:id="@+id/g2"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/g1"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/e3"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/c3"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/e2"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/c2"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/e1"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/c1"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="@color/colorAccent" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="411dp"
+        android:id="@+id/linearLayoutDisplays"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/btNovaPartida"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResposta">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/display1"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/a1"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/b1"
+                app:layout_constraintStart_toEndOf="@+id/f1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/b1"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/c1"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/d1"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/c1"
+                app:layout_constraintStart_toEndOf="@+id/e1"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/e1"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/f1"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/g1"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/d1"
+                app:layout_constraintEnd_toStartOf="@+id/b1"
+                app:layout_constraintStart_toEndOf="@+id/e1"
+                app:layout_constraintTop_toBottomOf="@+id/a1"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/display2"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/a2"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/b2"
+                app:layout_constraintStart_toEndOf="@+id/f2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/b2"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/c2"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/d2"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/c2"
+                app:layout_constraintStart_toEndOf="@+id/e2"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/e2"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/f2"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/g2"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/d2"
+                app:layout_constraintEnd_toStartOf="@+id/b2"
+                app:layout_constraintStart_toEndOf="@+id/e2"
+                app:layout_constraintTop_toBottomOf="@+id/a2"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/display3"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/a3"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/b3"
+                app:layout_constraintStart_toEndOf="@+id/f3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/b3"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/c3"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/d3"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/c3"
+                app:layout_constraintStart_toEndOf="@+id/e3"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/e3"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/f3"
+                android:layout_width="20dp"
+                android:layout_height="70dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+            <ImageView
+                android:id="@+id/g3"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/d3"
+                app:layout_constraintEnd_toStartOf="@+id/b3"
+                app:layout_constraintStart_toEndOf="@+id/e3"
+                app:layout_constraintTop_toBottomOf="@+id/a3"
+                app:srcCompat="@drawable/retangulo_arredondado" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btNovaPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nova_partida"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutPalpite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDisplays" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPalpite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNovaPartida">
+
+        <EditText
+            android:id="@+id/edPalpite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint"
+            android:inputType="number"
+            android:maxLength="3" />
 
         <Button
-            android:id="@+id/d3"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/d2"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
-
-        <Button
-            android:id="@+id/d1"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:background="@color/colorAccent" />
+            android:id="@+id/btEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

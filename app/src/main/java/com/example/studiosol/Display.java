@@ -3,6 +3,7 @@ package com.example.studiosol;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 /*
  * Classe criada para tratamento exclusido do display de 7 segmentos.
@@ -21,10 +22,10 @@ import android.widget.Button;
  */
 public class Display {
 
-    private Button a, b, c, d, e, f, g;
+    private ImageView a, b, c, d, e, f, g;
     private int corRecebida = Color.BLACK;
 
-    public Display(Button a, Button b, Button c, Button d, Button e, Button f, Button g) {
+    public Display(ImageView a, ImageView b, ImageView c, ImageView d, ImageView e, ImageView f, ImageView g) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -39,13 +40,13 @@ public class Display {
     }
 
     public void zerarDisplay() {
-        a.setBackgroundColor(Color.GRAY);
-        b.setBackgroundColor(Color.GRAY);
-        c.setBackgroundColor(Color.GRAY);
-        d.setBackgroundColor(Color.GRAY);
-        e.setBackgroundColor(Color.GRAY);
-        f.setBackgroundColor(Color.GRAY);
-        g.setBackgroundColor(Color.GRAY);
+        a.setColorFilter(Color.GRAY);
+        b.setColorFilter(Color.GRAY);
+        c.setColorFilter(Color.GRAY);
+        d.setColorFilter(Color.GRAY);
+        e.setColorFilter(Color.GRAY);
+        f.setColorFilter(Color.GRAY);
+        g.setColorFilter(Color.GRAY);
     }
 
     public void esconderDisplay() {
@@ -77,72 +78,72 @@ public class Display {
 
         switch (caractere) {
             case '0':
-                a.setBackgroundColor(corRecebida);
-                b.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
-                d.setBackgroundColor(corRecebida);
-                e.setBackgroundColor(corRecebida);
-                f.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                b.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
+                d.setColorFilter(corRecebida);
+                e.setColorFilter(corRecebida);
+                f.setColorFilter(corRecebida);
                 break;
             case '1':
-                b.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
+                b.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
                 break;
             case '2':
-                a.setBackgroundColor(corRecebida);
-                b.setBackgroundColor(corRecebida);
-                d.setBackgroundColor(corRecebida);
-                e.setBackgroundColor(corRecebida);
-                g.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                b.setColorFilter(corRecebida);
+                d.setColorFilter(corRecebida);
+                e.setColorFilter(corRecebida);
+                g.setColorFilter(corRecebida);
                 break;
             case '3':
-                a.setBackgroundColor(corRecebida);
-                b.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
-                d.setBackgroundColor(corRecebida);
-                g.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                b.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
+                d.setColorFilter(corRecebida);
+                g.setColorFilter(corRecebida);
                 break;
             case '4':
-                b.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
-                f.setBackgroundColor(corRecebida);
-                g.setBackgroundColor(corRecebida);
+                b.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
+                f.setColorFilter(corRecebida);
+                g.setColorFilter(corRecebida);
                 break;
             case '5':
-                a.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
-                d.setBackgroundColor(corRecebida);
-                f.setBackgroundColor(corRecebida);
-                g.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
+                d.setColorFilter(corRecebida);
+                f.setColorFilter(corRecebida);
+                g.setColorFilter(corRecebida);
                 break;
             case '6':
-                a.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
-                d.setBackgroundColor(corRecebida);
-                e.setBackgroundColor(corRecebida);
-                f.setBackgroundColor(corRecebida);
-                g.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
+                d.setColorFilter(corRecebida);
+                e.setColorFilter(corRecebida);
+                f.setColorFilter(corRecebida);
+                g.setColorFilter(corRecebida);
                 break;
             case '7':
-                a.setBackgroundColor(corRecebida);
-                b.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                b.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
                 break;
             case '8':
-                a.setBackgroundColor(corRecebida);
-                b.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
-                d.setBackgroundColor(corRecebida);
-                e.setBackgroundColor(corRecebida);
-                f.setBackgroundColor(corRecebida);
-                g.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                b.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
+                d.setColorFilter(corRecebida);
+                e.setColorFilter(corRecebida);
+                f.setColorFilter(corRecebida);
+                g.setColorFilter(corRecebida);
                 break;
             case '9':
-                a.setBackgroundColor(corRecebida);
-                b.setBackgroundColor(corRecebida);
-                c.setBackgroundColor(corRecebida);
-                f.setBackgroundColor(corRecebida);
-                g.setBackgroundColor(corRecebida);
+                a.setColorFilter(corRecebida);
+                b.setColorFilter(corRecebida);
+                c.setColorFilter(corRecebida);
+                f.setColorFilter(corRecebida);
+                g.setColorFilter(corRecebida);
                 break;
         }
 
